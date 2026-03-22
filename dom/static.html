@@ -1,0 +1,31 @@
+// <!--   Dom => document object model (html into a family tree structure)
+
+// static html  => it is fixed webpage . like a button without action.  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <p>This is a static page</p>
+  <button>submit</button>
+</body>
+</html>
+
+<!-- dynamic html => that change content, style or structure automatically - without reloading the page.   -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Hello</h1>
+<button onclick="changeText()">Click me</button>
+
+<script>
+function changeText() {
+  document.getElementById("title").innerText = "Hi, you clicked!";
+}
+</script>
+
+</body>
+</html>
